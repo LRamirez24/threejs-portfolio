@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url(href="https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url(href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    background: rgb(24, 24, 24);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-size: 1.6rem;
+    color: white;
+}
+
+h1 {
+    font-size: 8rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+h2 {
+    font-size: 4.8rem;
+    color: white;
+}
+
+h3 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 8rem;
+}
+
+//nav
+.main-head {
+    width: 95%;
+    margin: 0 0 0 auto;
+}
+
+.main-head nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    min-height: 10vh;
+    width: 90%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.main-head .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 10rem;
+    flex: 1 1 10rem;
+}
+
+.main-head .logo a {
+    margin: 2rem;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 200;
+}
+
+.main-head nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex: 1 1 40rem;
+    -webkit-box-flex: 1;
+    flex: 1 1 40rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.main-head .btn-contact {
+    background-color: white;
+    padding: 10px 14px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-family: 'Quicksand', sans-serif;
+    border: 1px solid black;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.main-head .btn-contact:hover {
+    background-color: black;
+    color: white;
+}
+
+.main-head .btn-contact:focus {
+    color: black;
+}
+
+nav li a:hover {
+    text-transform: uppercase;
+}
+
+.name:hover {
+    text-transform: uppercase;
+}
+
+.webgl {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    outline: none;
+    mix-blend-mode: exclusion;
+    z-index: 0;
+}
+
+.container {
+    height: 100vh;
+    margin-top: -4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+.title {
+    z-index: 1;
+    color: transparent;
+    font-size: 3.2rem;
+    -webkit-text-stroke: 1px white;
+}
+
+.media-title {
+    color: transparent;
+    font-size: 2.4rem;
+    -webkit-text-stroke: 1px white;
+    &:hover {
+        -webkit-text-stroke: 1px #0cb9e4;
+    }
+}
+
+.connect1 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.work-title:hover {
+    text-transform: uppercase;
+    color: #0cb9e4;
+}
+
+//about 
+.about-me {
+    display: grid;
+    max-width: 960px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+    margin-left: 10rem;
+    .info {
+        grid-column: 1/2;
+    }
+    .about-text {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        line-height: 1.8;
+    }
+}
+
+.luis-pic {
+    max-width: 55rem;
+    max-height: 70rem;
+    margin-top: -4rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-pic {
+    margin-top: 4rem;
+    max-width: 40rem;
+    max-height: 60rem;
+}
+
+.about-pic:hover {
+    transform: scale(1.2, 1.2);
+    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+    border-radius: 40px;
+}
+
+//work
+.work-title {
+    margin-left: 10rem;
+    font-size: 4.8rem;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    margin-left: 10rem;
+    grid-row-gap: 8rem;
+    margin-bottom: 10rem;
+}
+
+.recent-work {
+    font-size: 4rem;
+    margin-top: 40rem;
+}
+
+.view-work {
+    text-align: center;
+}
+
+//social 
+.social {
+    min-height: 10vh;
+    ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+    }
+}
+
+//footer
+footer {
+    min-height: 10vh;
+    padding: 0% 5%;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.social-icons1 {
+    margin-right: 3rem;
+    width: 3em;
+    height: 3rem;
+}
+
+.social-icons1,
+.social-icons2 {
+    margin-bottom: 8rem;
+}
+
+.social-icons2 {
+    width: 3em;
+    height: 3rem;
+}
+
+.social-icons1:hover {
+    transform: scale(0.9, 0.9);
+}
+
+.social-icons2:hover {
+    transform: scale(0.9, 0.9);
+}
+
+.connect {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 8rem;
+}
