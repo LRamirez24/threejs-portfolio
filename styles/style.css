@@ -193,6 +193,7 @@ nav li a:hover {
 }
 
 .media-title {
+  display: inline-block;
   color: transparent;
   font-size: 2.4rem;
   -webkit-text-stroke: 1px white;
@@ -208,9 +209,46 @@ nav li a:hover {
   margin-bottom: 4rem;
 }
 
-.work-title:hover {
+.recent {
+  display: inline-block;
+  font-size: 5.6rem;
+}
+
+.recent:hover {
   text-transform: uppercase;
   color: #0cb9e4;
+}
+
+.circle {
+  max-width: 4rem;
+  max-height: 4rem;
+}
+
+.circle {
+  -webkit-animation: circleAnim 1.4s ease-in-out infinite alternate;
+          animation: circleAnim 1.4s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes circleAnim {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(40%);
+            transform: translateX(40%);
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(40%);
+            transform: translateX(40%);
+  }
 }
 
 .about-me {
@@ -249,8 +287,8 @@ img {
 
 .about-pic {
   margin-top: 4rem;
-  max-width: 40rem;
-  max-height: 60rem;
+  max-width: 50rem;
+  max-height: 70rem;
 }
 
 .about-pic:hover {
@@ -284,7 +322,15 @@ img {
 }
 
 .view-work {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .social {
@@ -353,5 +399,116 @@ footer ul {
   text-transform: uppercase;
   color: white;
   margin-top: 8rem;
+}
+
+/*Media query for tablets and mid sized screens section  */
+@media only screen and (max-width: 768px) {
+  .doodles2 {
+    display: none;
+  }
+  .doodles3 {
+    display: none;
+  }
+  .luis-pic {
+    max-width: 40rem;
+  }
+  br {
+    display: none;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  .work {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0rem;
+  }
+  .work-title {
+    margin-left: 0rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .luis-pic {
+    display: none;
+  }
+  br {
+    display: none;
+  }
+}
+
+/*Media query for small and mid sized phones section  */
+@media only screen and (max-width: 425px) {
+  .doodles2 {
+    display: none;
+  }
+  .doodles3 {
+    display: none;
+  }
+  .intro-text2 h1 {
+    color: white;
+    font-size: 5.6rem;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+  }
+  .about-me {
+    margin-left: 0rem;
+    place-items: center;
+    display: inline-block;
+    text-align: center;
+  }
+  .about-me .media-title {
+    display: block;
+    text-align: center;
+  }
+  .about-pic {
+    max-width: 35rem;
+  }
+  .social ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container {
+    margin-left: 0rem;
+    text-align: center;
+  }
+  .work {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0rem;
+  }
+  .work-title {
+    margin-left: 0rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .doodles {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 24%;
+    right: 0%;
+    bottom: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

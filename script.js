@@ -21,6 +21,7 @@ const material = new THREE.MeshStandardMaterial()
 material.color = new THREE.Color(0x292929)
 material.metalness = 0.7
 material.roughness = 0.2
+material.wireframe = true
 material.normalMap = normalTexture;
 
 // Mesh
@@ -29,7 +30,7 @@ scene.add(sphere)
 
 // Lights
 
-const pointLight = new THREE.PointLight(0xffffff, 0.1)
+const pointLight = new THREE.PointLight(0xb69af, 1.1)
 pointLight.position.x = 2
 pointLight.position.y = 3
 pointLight.position.z = 4
