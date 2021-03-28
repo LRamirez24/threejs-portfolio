@@ -293,6 +293,13 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: underline;
+}
+
+.all-work:hover {
+    text-transform: uppercase;
+    color: #0cb9e4;
+    text-decoration: underline 1px #0cb9e4;
 }
 
 //social 
