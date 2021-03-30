@@ -731,6 +731,18 @@ footer ul {
   .doodles3 {
     display: none;
   }
+  .overlay {
+    right: 0;
+  }
+  .overlay1 {
+    right: 0;
+  }
+  .overlay2 {
+    right: 0;
+  }
+  .overlay3 {
+    right: 0;
+  }
   .main-head .logo a {
     display: none;
   }
