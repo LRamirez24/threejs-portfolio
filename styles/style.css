@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 @import url(href= "https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-@import url(href= "https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
+@import url(href= "https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -54,6 +54,55 @@ h3 {
   text-transform: uppercase;
   color: white;
   margin-top: 8rem;
+}
+
+/* Intro video styles */
+.intro-video {
+  background: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro-text2 h1 {
+  color: white;
+  font-size: 6.4rem;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.slider {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.hide {
+  background: black;
+  overflow: hidden;
+}
+
+.hide span {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  display: inline-block;
 }
 
 .main-head {
@@ -201,7 +250,6 @@ nav li a:hover {
 }
 
 .title {
-  z-index: 1;
   color: transparent;
   font-size: 3.2rem;
   -webkit-text-stroke: 1px white;
@@ -375,16 +423,15 @@ img {
 
 .about-pic {
   margin-top: 4rem;
+  height: 60rem;
   max-width: 50rem;
   max-height: 70rem;
 }
 
 .about-pic:hover {
-  -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
-  -webkit-box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
-          box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
-  border-radius: 40px;
+  -webkit-transform: skewY(7deg) scale(0.95, 0.95);
+          transform: skewY(7deg) scale(0.95, 0.95);
+  /* Firefox 16+, IE 10+, Opera */
 }
 
 .work-title {
@@ -393,15 +440,143 @@ img {
 }
 
 .work {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -webkit-column-gap: 2rem;
-          column-gap: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 8rem;
+          column-gap: 8rem;
   margin-left: 10rem;
-  grid-row-gap: 8rem;
+  row-gap: 4rem;
   margin-bottom: 10rem;
+}
+
+.transition3 {
+  position: relative;
+}
+
+.transition2 {
+  position: relative;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay1 {
+  position: absolute;
+  bottom: 80%;
+  right: 40%;
+  /* Black see-through */
+  width: 100%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
+
+.overlay1 p {
+  font-size: 2.4rem;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 80%;
+  right: 40%;
+  /* Black see-through */
+  width: 100%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 2.4rem;
+}
+
+.overlay2 {
+  position: absolute;
+  bottom: 80%;
+  right: 40%;
+  /* Black see-through */
+  width: 100%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
+
+.overlay2 p {
+  font-size: 2.4rem;
+}
+
+.overlay3 {
+  position: absolute;
+  bottom: 80%;
+  right: 40%;
+  /* Black see-through */
+  width: 100%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
+
+.overlay3 p {
+  font-size: 2.4rem;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.transition2:hover .overlay1 {
+  opacity: 1;
+}
+
+.transition3:hover .overlay {
+  opacity: 1;
+}
+
+.transition4:hover .overlay2 {
+  opacity: 1;
+}
+
+.transition5:hover .overlay3 {
+  opacity: 1;
+}
+
+.work-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  margin-top: 1rem;
+}
+
+.more:hover {
+  text-transform: uppercase;
+  color: #0cb9e4;
 }
 
 .recent-work {

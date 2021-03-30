@@ -43,11 +43,11 @@
     </header>
 
     <div class="container">
-        <h1>Luis Ramirez</h1>
-        <h2 class="title">Creative UI/UX Developer | Designer | Friend</h2>
+        <h1 class="stagger1">Luis Ramirez</h1>
+        <h2 class="stagger1 title">Creative UI/UX Developer | Designer | Friend</h2>
         <!-- <a href="#"><button>Scroll Down</button></a> -->
     </div>
-    <canvas class="webgl"></canvas>
+    <canvas class="webgl stagger1"></canvas>
 
     <section class="about-me" id="about">
         <div class="info">
@@ -74,7 +74,7 @@
                 </ul>
             </div>
         </div>
-        <img class="luis-pic" src="/images/me (2).png" alt="aztecdaddy">
+        <img class="luis-pic transition1" src="/images/me (2).png" alt="aztecdaddy">
         <img class="rocket" src="/images/Cube-1.svg" alt="rocket">
         <img class="spare" src="/images/Sphere.svg" alt="3dicon">
     </section>
@@ -84,21 +84,65 @@
     </div>
 
     <section class="work">
-        <div>
-            <a href="https://www.shoejackcity.com/" title="shoejackcity" target="_blank" rel="noopener noreferrer"> <img class="about-pic" src="/images/landing-page-v2 (2).png" alt="aztecdaddy"></a>
+        <div class="transition2">
+            <a href="https://www.shoejackcity.com/" title="shoejackcity" target="_blank" rel="noopener noreferrer"> <img class="about-pic" src="/images/pexels-cleyton-ewerton-4855604.jpg" alt="aztecdaddy">
+                <div class="overlay1">
+                    <p>SHOEJACKCITY</p>
+                </div>
+            </a>
+            <div class="work-info">
+                <p>Video game launch website</p>
+                <a href="https://www.shoejackcity.com/" target="_blank" rel="noopener noreferrer">
+                    <p class="more">More ➡️</p>
+                </a>
+            </div>
 
-            <!-- <p>view more</p> -->
         </div>
-        <a href="https://apex-firegramx.web.app/" title="firegram" target="_blank" rel="noopener noreferrer">
-            <img class="about-pic" src="/images/firegramv3.png" alt="aztecdaddy">
-        </a>
-        <a href="https://www.developedbyluis.com/redesign/" title="adidas" target="_blank" rel="noopener noreferrer">
+        <div class="transition3">
+            <a href="https://apex-firegramx.web.app/" title="firegram" target="_blank" rel="noopener noreferrer">
+                <img class="about-pic" src="/images/pexels-bia-sousa-4493771.jpg" alt="aztecdaddy">
+                <div class="overlay">
+                    <p>FIREGRAM</p>
+                </div>
+            </a>
+            <div class="work-info">
+                <p>Anime image React website</p>
+                <a href="https://apex-firegramx.web.app/" target="_blank" rel="noopener noreferrer">
+                    <p class="more">More ➡️</p>
+                </a>
+            </div>
+        </div>
+        <div class="transition4">
+            <a href="https://www.developedbyluis.com/redesign/" title="adidas" target="_blank" rel="noopener noreferrer">
+                <img class="about-pic" src="/images/pexels-marcelo-dias-2010877.jpg" alt="aztecdaddy">
+                <div class="overlay2">
+                    <p>Adidas redesign</p>
+                </div>
+            </a>
+            <div class="work-info">
+                <p>Adidas redesign website</p>
+                <a href="https://www.developedbyluis.com/redesign/" target="_blank" rel="noopener noreferrer">
+                    <p class="more">More ➡️</p>
+                </a>
+            </div>
+        </div>
 
-            <img class="about-pic" src="/images/Frame 7 (4).png" alt="aztecdaddy">
+        <div class="transition5">
+            <a href="https://www.developedbyluis.com/" title="redesign" target="_blank" rel="noopener noreferrer">
+                <img class="about-pic" src="/images/pexels-olya-prutskova-7121681.jpg" alt="aztecdaddy">
+                <div class="overlay3">
+                    <p>Travelly 2100</p>
+                </div>
+            </a>
+            <div class="work-info">
+                <p>Travel and tour agency website</p>
+                <a href="https://www.developedbyluis.com/" target="_blank" rel="noopener noreferrer">
+                    <p class="more">More ➡️</p>
+                </a>
+            </div>
+        </div>
 
-        </a>
 
-        <img class="about-pic" src="/images/Frame 1 (15).png" alt="aztecdaddy">
     </section>
     <div>
     </div>
@@ -128,8 +172,22 @@
             </li>
         </ul>
     </footer>
+
+    <div class="intro-video">
+        <div class="intro-text2">
+            <h1 class="hide"><span class="text">Creating Innovation</span></h1>
+            <h1 class="hide"><span class="text">For Everyday</span></h1>
+            <h1 class="hide"><span class="text">People.</span></h1>
+        </div>
+    </div>
+    <div class="slider"></div>
+
     <script src="./three.min.js"></script>
     <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="/app.js"></script>
 
 </body>
 
