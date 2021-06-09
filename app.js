@@ -25,7 +25,7 @@ gsap.from(".transition1", {
     rotation: 0,
     scrollTrigger: {
         trigger: ".transition1",
-        toggleActions: "restart pause reverse pause",
+        toggleActions: "play none none none",
         start: "top center",
         end: "top 100px",
     }
@@ -40,7 +40,7 @@ gsap.from(".transition2", {
     rotation: -100,
     scrollTrigger: {
         trigger: ".transition2",
-        toggleActions: "restart none reverse none",
+        toggleActions: "play none none none",
         start: "top center",
         end: "top 100px",
     }
@@ -55,7 +55,7 @@ gsap.from(".transition3", {
     rotation: -100,
     scrollTrigger: {
         trigger: ".transition3",
-        toggleActions: "restart none reverse none",
+        toggleActions: "play none none none",
         start: "top center",
         end: "top 100px",
     }
@@ -69,7 +69,7 @@ gsap.from(".transition4", {
     rotation: -100,
     scrollTrigger: {
         trigger: ".transition4",
-        toggleActions: "restart none reverse none",
+        toggleActions: "play none none none",
         start: "top center",
         end: "top 100px",
     }
@@ -83,7 +83,7 @@ gsap.from(".transition5", {
     rotation: -100,
     scrollTrigger: {
         trigger: ".transition5",
-        toggleActions: "restart none reverse none",
+        toggleActions: "play none none none",
         start: "top center",
         end: "top 100px",
     }

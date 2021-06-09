@@ -319,13 +319,14 @@ nav li a:hover {
 .about-me {
   display: -ms-grid;
   display: grid;
-  max-width: 960px;
+  max-width: 1200px;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   -webkit-column-gap: 4rem;
           column-gap: 4rem;
   margin-left: 10rem;
   position: relative;
+  margin-bottom: 20rem;
 }
 
 .about-me .info {
@@ -337,13 +338,16 @@ nav li a:hover {
 .about-me .about-text {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  line-height: 1.8;
+  line-height: 2;
+  font-size: 1.6rem;
 }
 
 .luis-pic {
+  width: 60rem;
+  height: 60rem;
   max-width: 55rem;
   max-height: 70rem;
-  margin-top: -4rem;
+  margin-top: -8rem;
 }
 
 .rocket {
@@ -423,8 +427,9 @@ img {
 
 .about-pic {
   margin-top: 4rem;
-  height: 60rem;
-  max-width: 50rem;
+  width: 60rem;
+  height: 70rem;
+  max-width: 60rem;
   max-height: 70rem;
 }
 
@@ -453,7 +458,6 @@ img {
           column-gap: 8rem;
   margin-left: 10rem;
   row-gap: 4rem;
-  margin-bottom: 10rem;
 }
 
 .transition3 {
@@ -594,6 +598,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 20rem;
 }
 
 .all-work:hover {
